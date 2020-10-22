@@ -1,0 +1,65 @@
+.clients
+  display: flex
+  margin-bottom: 60px 
+  &__logos
+    width: 60%
+  &__reviews
+    width: 40%
+  &__list
+    display: flex
+    padding-left: 0
+    margin: 0
+    flex-wrap: wrap
+    align-items: center
+    li
+      list-style: none
+      margin-right: 50px
+      margin-bottom: 40px
+  &-love
+    display: inline-block
+    margin-left: 40px
+    padding-top: 5px
+    min-height: 47px
+    font-size: 18px
+    background: url(../img/clients/heart.svg) no-repeat left 19px top
+.reviews
+  position: relative
+  &::before
+    content: ""
+    display: block
+    width: 92px
+    height: 126px
+    background: url(../img/clients/lines.svg) no-repeat
+    position: absolute
+    top: -18px
+    left: 0
+    z-index: 1
+  &__header
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    &-content
+      flex-grow: 1
+      padding-left: 20px
+      font-family: 'Lato', sans-serif
+  &__photo
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    border: 5px solid $photo-border
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+    z-index: 2
+  &__name
+    font-size: 18px
+    color: $h-color
+    font-weight: 900
+  &__company
+    font-size: 15px
+    color: $h-color
+  &__content
+    font-size: 15px
+    line-height: 1.8
+    p
+      margin-bottom: 20px
+      &::first-line
+        text-indent: 20px

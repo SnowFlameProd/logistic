@@ -9,11 +9,26 @@ body
   color: $text-color
 h1, h2, h3, h4, h5, h6
   margin: 0
+p
+  margin: 0 0 10px
 .container
   width: 100%
   max-width: 1230px
   margin: 0 auto
   padding: 0 15px
+.section
+  padding: 60px 0
+  &__title
+    margin-bottom: 55px
+    font-family: "Lato", sans-serif
+    font-size: 45px
+    line-height: 1.2
+    font-weight: 900
+    color: $h-color
+    span
+      color: $h-sec-color
+  &_map
+    background: url(../img/map.svg) no-repeat left 30px top 140px
 .form
   &__group
     margin-bottom: 25px
@@ -41,7 +56,10 @@ h1, h2, h3, h4, h5, h6
   &_email
     background: url(../img/intro/mail-icon.svg) no-repeat top 6px left 18px
 .btn
-  padding: 11px 20px
+  display: inline-block
+  vertical-align: middle
+  max-height: 45px
+  padding: 13px 45px
   font-family: 'PT Sans', sans-serif
   font-size: 18px
   line-height: 1.1
@@ -52,6 +70,7 @@ h1, h2, h3, h4, h5, h6
   background: #333
   border: 0
   border-radius: 5px
+  text-decoration: none
   &_orange
     background-image: linear-gradient(to right, $btn-gr-1, $btn-gr-2)
   &_block
