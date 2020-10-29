@@ -238,6 +238,10 @@ ul {
   z-index: 1000;
 }
 
+.header_scroll {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .header__inner {
   height: 85px;
   display: -webkit-box;
@@ -271,6 +275,10 @@ ul {
   color: #fff;
 }
 
+.nav__link:not(.active):hover {
+  text-decoration: underline;
+}
+
 .nav__link.active {
   background-color: #004AF2;
 }
@@ -279,6 +287,12 @@ ul {
   margin-bottom: 30px;
   height: 600px;
   background: #000 url(../img/intro/intro-bg.jpg) no-repeat center/cover;
+}
+
+.intro_blog {
+  height: 350px;
+  background: url(../img/intro/blog-bg.jpg);
+  background-size: cover;
 }
 
 .intro__inner {
@@ -340,6 +354,7 @@ ul {
 }
 
 .request-form__title {
+  margin-bottom: 5px;
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-weight: 900;
@@ -358,6 +373,10 @@ ul {
 .request-form_intro {
   position: relative;
   bottom: -30px;
+}
+
+.request-form_right {
+  margin-left: auto;
 }
 
 .services {
@@ -749,6 +768,18 @@ ul {
           justify-content: space-between;
 }
 
+.articles_column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles_column .articles__item {
+  max-width: none;
+  margin-bottom: 45px;
+}
+
 .articles__item {
   margin-bottom: 30px;
   width: 100%;
@@ -938,5 +969,15 @@ ul {
 
 .modal__close img {
   display: block;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__col {
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */
