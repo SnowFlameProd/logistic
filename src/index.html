@@ -46,7 +46,7 @@
                 <div class="form__group">
                   <input type="email" class="input input_email" placeholder="Your e-mail">
                 </div>
-                <button class="btn btn_block btn_orange" type="submit">Call me back</button>
+                <button class="btn btn_block btn_orange" type="submit"><span>Call me back</span></button>
               </form>
             </div>
           </div>
@@ -181,7 +181,7 @@
           </div>
         </div>
         <!-- /.clients -->
-        <a href="#" class="btn btn_orange">Become a client</a>
+        <button href="#" class="btn btn_orange btn_shadow" type="button"><span>Become a client</span></button>
         <span class="clients-love">we love our clients</span>
       </div>
       <!-- /.container -->
@@ -240,11 +240,11 @@
               <div class="team__prof">Logistic manager - 8 years experience</div>
               <ul class="team__contacts">
                 <li>
-                  <img class="team__contacts-icon" src="img/team/mail-black-icon.svg" alt="">
+                  <img class="team__contacts-icon" src="img/icons/mail-black-icon.svg" alt="">
                   <a href="mailto:john@centerlogistic.com">john@centerlogistic.com</a>
                 </li>
                 <li>
-                  <img class="team__contacts-icon" src="img/team/phone-black-icon.svg" alt="">
+                  <img class="team__contacts-icon" src="img/icons/phone-black-icon.svg" alt="">
                   <a href="tel:+987412512543">+987412512543</a>
                 </li>
               </ul>
@@ -258,11 +258,11 @@
               <div class="team__prof">Software engineer</div>
               <ul class="team__contacts">
                 <li>
-                  <img class="team__contacts-icon" src="img/team/mail-black-icon.svg" alt="">
+                  <img class="team__contacts-icon" src="img/icons/mail-black-icon.svg" alt="">
                   <a href="mailto:daniel@centerlogistic.com">daniel@centerlogistic.com</a>
                 </li>
                 <li>
-                  <img class="team__contacts-icon" src="img/team/phone-black-icon.svg" alt="">
+                  <img class="team__contacts-icon" src="img/icons/phone-black-icon.svg" alt="">
                   <a href="tel:+987423252253">+987423252253</a>
                 </li>
               </ul>
@@ -276,11 +276,11 @@
               <div class="team__prof">Marketing specialist - 10 years experience</div>
               <ul class="team__contacts">
                 <li>
-                  <img class="team__contacts-icon" src="img/team/mail-black-icon.svg" alt="">
+                  <img class="team__contacts-icon" src="img/icons/mail-black-icon.svg" alt="">
                   <a href="mailto:anna@centerlogistic.com">anna@centerlogistic.com</a>
                 </li>
                 <li>
-                  <img class="team__contacts-icon" src="img/team/phone-black-icon.svg" alt="">
+                  <img class="team__contacts-icon" src="img/icons/phone-black-icon.svg" alt="">
                   <a href="tel:+98735353456">+98735353456</a>
                 </li>
               </ul>
@@ -300,13 +300,114 @@
         </div>
         <!-- /.mission -->
         <div class="text-center">
-          <button type="button" class="btn btn_orange">Become a client</button>
+          <button type="button" class="btn btn_orange btn_shadow"><span>Become a client</span></button>
         </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title"><span>Interesting</span> to read</h2>
+        <div class="articles">
+          <article class="articles__item">
+            <h4 class="articles__title">
+              <a href="#">News title</a>
+            </h4>
+            <div class="articles__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+          </article>
+          <article class="articles__item">
+            <h4 class="articles__title">
+              <a href="#">News title</a>
+            </h4>
+            <div class="articles__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+          </article>
+        </div>
+        <!-- /.articles -->
+        <a class="btn btn_orange btn_shadow" href="#"><span>Visit blog</span></a>
+      </div>
+      <!-- /.container -->
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <img src="img/logo-black.svg" alt="">
+      <address class="footer__contacts">
+        <p>New York, Street, ZIP code</p>
+        <p>Call Us: <a href="tel:+9948373123">+9948373123</a> or E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+      </address>
+      <nav class="footer__nav">
+        <a href="#">Terms & Contidions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Our blog</a>
+      </nav>
+    </div>
+  </footer>
 
+  <div class="modal" id="becomeClientModal">
+    <div class="modal__inner">
+      <div class="modal__header">
+        <h4 class="modal__title">Need to deliver your cargo? We can help!</h4>
+        <div class="modal__text">
+          <p>Fill a little form and we will call you back!</p>
+        </div>
+      </div>
+      <form class="form" action="/" method="post">
+        <div class="form__group">
+          <input type="text" class="input input_dark input_user" placeholder="Your name">
+        </div>
+        <div class="form__group">
+          <input type="tel" class="input input_dark input_phone" placeholder="Your phone">
+        </div>
+        <div class="form__group">
+          <input type="email" class="input input_dark input_email" placeholder="Your e-mail">
+        </div>
+        <button class="btn btn_block btn_orange" type="submit"><span>Call me back</span></button>
+      </form>
+      <div class="modal__footer">
+        <h4 class="modal__footer-title">Our contacts</h4>
+        <address class="modal__contacts">
+          <p>New York, Street, ZIP code</p> 
+          <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+          <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+        </address>
+      </div>
+      <button class="modal__close">
+        <img src="img/icons/close-icon.svg" alt="Close">
+      </button>
+    </div>
+    <!-- /.modaL__inner -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal" id="thanksModal">
+    <div class="modal__inner">
+      <div class="modal__header">
+        <img class="modal__icon" src="img/icons/tick-icon.svg" alt="">
+        <h4 class="modal__title">Thanks for your request</h4>
+        <div class="modal__text">
+          <p>We call you back as soon as possible!</p>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <h4 class="modal__footer-title">Our contacts</h4>
+        <address class="modal__contacts">
+          <p>New York, Street, ZIP code</p> 
+          <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+          <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+        </address>
+      </div>
+      <button class="modal__close">
+        <img src="img/icons/close-icon.svg" alt="Close">
+      </button>
+    </div>
+    <!-- /.modaL__inner -->
+  </div>
+  <!-- /.modal -->
 </body>
 </html>
