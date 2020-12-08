@@ -1,20 +1,23 @@
 .articles
-  margin-bottom: 20px
+  margin: 0 -15px 30px
   display: flex
-  flex-wrap: wrap
   justify-content: space-between
   &_column
     flex-direction: column
+    margin-bottom: 75px
     .articles__item
       max-width: none
       margin-bottom: 45px
+      &:last-child
+        margin-bottom: 0
   &__item
+    padding: 0 15px
     margin-bottom: 30px
     width: 100%
     max-width: 500px
   &__title
     margin-bottom: 15px
-    font-size: 18px
+    font-size: 24px
     font-weight: 700
     color: $h-color
     a
@@ -24,7 +27,7 @@
         text-decoration: underline
   &__text
     margin-bottom: 15px
-    font-size: 15px
+    font-size: 16px
     color: $text-color
   &__date
     display: block

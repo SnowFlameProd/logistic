@@ -10,10 +10,10 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header header_scroll">
     <div class="container">
       <div class="header__inner">
-        <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+        <a href="index.html"><img class="img" src="img/logo.svg" alt="Logo"></a>
         <nav class="nav">
           <a class="nav__link active" href="#">Services</a>
           <a class="nav__link" href="#">Clients</a>
@@ -22,6 +22,9 @@
           <a class="nav__link" href="#">News</a>
           <a class="nav__link" href="#">Contact Us</a>
         </nav>
+        <button class="burger" type="button">
+          <img class="burger__icon" src="img/icons/burger.svg" alt="">
+        </button>
       </div>
     </div>
   </header>
@@ -112,49 +115,49 @@
     </section>
     <!-- /.services -->
     <section class="section section_map">
-      <div class="container container_map">
+      <div class="container">
         <h2 class="section__title"><span>Our</span> clients</h2>
         <div class="clients">
           <div class="clients__logos">
             <ul class="clients__list">
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/atica.svg" alt="">
+                  <img class="img" src="img/clients/atica.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/hex-lab 1.svg" alt="">
+                  <img class="img" src="img/clients/hex-lab 1.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/amara.svg" alt="">
+                  <img class="img" src="img/clients/amara.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/muzica-2.svg" alt="">
+                  <img class="img" src="img/clients/muzica-2.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/solaytic.svg" alt="">
+                  <img class="img" src="img/clients/solaytic.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/hexa.svg" alt="">
+                  <img class="img" src="img/clients/hexa.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/utosia-2.svg" alt="">
+                  <img class="img" src="img/clients/utosia-2.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="img/clients/fox-hub.svg" alt="">
+                  <img class="img" src="img/clients/fox-hub.svg" alt="">
                 </a>
               </li>
             </ul>
@@ -177,16 +180,17 @@
               </div>
             </div>
           </div>
+          <!-- /.clients__reviews -->
         </div>
-        <!-- /.clients -->
         <button href="#" class="btn btn_orange btn_shadow" type="button"><span>Become a client</span></button>
         <span class="clients-love">we love our clients</span>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.clients -->
-    <div class="section">
+    <section class="section">
       <div class="container">
+        <h2 class="section__title"><span>Our</span> benefits</h2>
         <div class="benefits">
           <div class="benefits__col">
             <ul class="benefits-list">
@@ -225,7 +229,7 @@
         <!-- /.benefits -->
       </div>
       <!-- /.container -->
-    </div>
+    </section>
     <!-- /.benefits -->
     <section class="section section_gray">
       <div class="container">
@@ -305,7 +309,7 @@
       <!-- /.container -->
     </section>
     <!-- /.mission -->
-    <section class="section">
+    <section class="section section_last">
       <div class="container">
         <h2 class="section__title"><span>Interesting</span> to read</h2>
         <div class="articles">
@@ -351,37 +355,40 @@
   </footer>
   <div class="modal" id="becomeClientModal">
     <div class="modal__inner">
-      <div class="modal__header">
-        <h4 class="modal__title">Need to deliver your cargo? We can help!</h4>
-        <div class="modal__text">
-          <p>Fill a little form and we will call you back!</p>
+      <div class="modal__content">
+        <div class="modal__header">
+          <h4 class="modal__title">Need to deliver your cargo? We can help!</h4>
+          <div class="modal__text">
+            <p>Fill a little form and we will call you back!</p>
+          </div>
         </div>
+        <form class="form" action="/" method="post">
+          <div class="form__group">
+            <input type="text" class="input input_dark input_user" placeholder="Your name">
+          </div>
+          <div class="form__group">
+            <input type="tel" class="input input_dark input_phone" placeholder="Your phone">
+          </div>
+          <div class="form__group">
+            <input type="email" class="input input_dark input_email" placeholder="Your e-mail">
+          </div>
+          <button class="btn btn_block btn_orange" type="submit"><span>Call me back</span></button>
+        </form>
+        <div class="modal__footer">
+          <h4 class="modal__footer-title">Our contacts</h4>
+          <address class="modal__contacts">
+            <p>New York, Street, ZIP code</p> 
+            <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+            <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+          </address>
+        </div>
+        <button class="modal__close">
+          <img src="img/icons/close-icon.svg" alt="Close">
+        </button>
       </div>
-      <form class="form" action="/" method="post">
-        <div class="form__group">
-          <input type="text" class="input input_dark input_user" placeholder="Your name">
-        </div>
-        <div class="form__group">
-          <input type="tel" class="input input_dark input_phone" placeholder="Your phone">
-        </div>
-        <div class="form__group">
-          <input type="email" class="input input_dark input_email" placeholder="Your e-mail">
-        </div>
-        <button class="btn btn_block btn_orange" type="submit"><span>Call me back</span></button>
-      </form>
-      <div class="modal__footer">
-        <h4 class="modal__footer-title">Our contacts</h4>
-        <address class="modal__contacts">
-          <p>New York, Street, ZIP code</p> 
-          <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
-          <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
-        </address>
-      </div>
-      <button class="modal__close">
-        <img src="img/icons/close-icon.svg" alt="Close">
-      </button>
+      <!-- /.modal__content -->
     </div>
-    <!-- /.modaL__inner -->
+    <!-- /.modal__inner -->
   </div>
   <!-- /.modal -->
   <div class="modal" id="thanksModal">

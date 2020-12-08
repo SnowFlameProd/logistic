@@ -12,12 +12,16 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+        <a href="index.html"><img class="img" src="img/logo.svg" alt="Logo"></a>
         <nav class="nav">
           <a class="nav__link" href="index.html">Home Page</a>
-          <a class="nav__link" href="#">Privacy Policy</a>
-          <a class="nav__link" href="#">Terma & Conditions</a>
+          <a class="nav__link active" href="blog.html">Blog</a>
+          <a class="nav__link" href="privacy.html">Privacy Policy</a>
+          <a class="nav__link" href="terms.html">Terma & Conditions</a>
         </nav>
+        <button class="burger" type="button">
+          <img class="burger__icon" src="img/icons/burger.svg" alt="">
+        </button>
       </div>
     </div>
   </header>
@@ -25,7 +29,7 @@
   <section class="section">
     <div class="container">
       <div class="content">
-        <div class="content__col">
+        <div class="content__col content__col_left">
           <h1 class="section__title"><span>Interesting</span> to read</h1>
           <div class="articles articles_column">
             <article class="articles__item">
@@ -65,10 +69,10 @@
               <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
             </article>
           </div>
-          <a class="btn btn_orange" href="index.html"><span>Back to home</span></a>
+          <a class="btn btn_orange btn_shadow" href="index.html"><span>Back to home</span></a>
         </div>
         <!-- /.content__col -->
-        <div class="content__col">
+        <div class="content__col content__col_right">
           <div class="request-form request-form_right">
             <div class="request-form__header">
               <h3 class="request-form__title">Get Callback</h3>
