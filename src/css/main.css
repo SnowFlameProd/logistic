@@ -211,6 +211,10 @@ ul {
   transition: opacity .1s linear;
 }
 
+.btn:active, .btn:focus {
+  outline: none;
+}
+
 .btn:hover::before {
   opacity: .15;
 }
@@ -235,12 +239,6 @@ ul {
   z-index: 2;
 }
 
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -249,6 +247,8 @@ ul {
   left: 0;
   right: 0;
   z-index: 1000;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
 }
 
 .header_scroll {
@@ -286,6 +286,8 @@ ul {
   padding: 0 15px;
   text-decoration: none;
   color: #fff;
+  -webkit-transition: background .2s linear;
+  transition: background .2s linear;
 }
 
 .nav__link:not(.active):hover {
@@ -913,6 +915,13 @@ ul {
   padding: 25px;
   position: relative;
   background-color: #fff;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: opacity .2s ease-out, -webkit-transform .2s ease-out;
+  transition: opacity .2s ease-out, -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out, opacity .2s ease-out;
+  transition: transform .2s ease-out, opacity .2s ease-out, -webkit-transform .2s ease-out;
 }
 
 .modal__header {
@@ -995,8 +1004,18 @@ ul {
           transform: rotate(90deg);
 }
 
+.modal__close:focus {
+  outline: none;
+}
+
 .modal__close img {
   display: block;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .content {

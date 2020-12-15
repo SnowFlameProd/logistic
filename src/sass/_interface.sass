@@ -123,6 +123,8 @@ ul
     left: 0
     z-index: 1
     transition: opacity .1s linear
+  &:active, &:focus
+    outline: none
   &:hover
     &::before
       opacity: .15
@@ -136,5 +138,3 @@ ul
   span
     position: relative
     z-index: 2
-.active
-  display: flex

@@ -22,6 +22,11 @@
     padding: 25px
     position: relative
     background-color: #fff
+    opacity: 0
+
+    transform: scale(.5)
+
+    transition: transform .2s ease-out, opacity .2s ease-out
   &__header
     margin-bottom: 25px
     text-align: center
@@ -74,5 +79,9 @@
     transition: transform .2s linear
     &:hover
       transform: rotate(90deg)
+    &:focus
+      outline: none
     img
       display: block
+.show
+  display: flex
