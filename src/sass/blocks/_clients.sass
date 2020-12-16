@@ -21,20 +21,70 @@
     background: url(../img/clients/heart.svg) no-repeat left 19px top
 .reviews
   position: relative
-  &::before
+  &::before, &::after
     content: ""
     display: block
-    width: 92px
-    height: 126px
-    background: url(../img/clients/lines.svg) no-repeat
+    width: 8px
+    height: 100%
+    background-image: url()
     position: absolute
-    top: -18px
+    top: 0
+    z-index: 3
+  &::before
     left: 0
-    z-index: 1
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0))
+  &::after
+    right: 0
+    background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0))
+  .slick-list
+    padding-top: 10px
+    z-index: 2
+  .slick-dots
+    display: flex
+    justify-content: center
+    width: 100%
+    position: absolute
+    bottom: -20px
+    left: 0
+    z-index: 3
+    button
+      display: block
+      width: 10px
+      height: 10px
+      padding: 0
+      color: transparent
+      font-size: 0
+      background: $dots-color
+      border: 0
+      border-radius: 50%
+      cursor: pointer
+      transition: background .2s linear, box-shadow .2s linear
+      &:focus
+        outline: none
+    li
+      margin: 0 8px
+    .slick-active
+      button
+        background: $active-color
+        box-shadow: 0 0 0 5px rgba(0, 74, 242, .11)
+  &__item
+    padding: 0 10px
   &__header
     display: flex
     align-items: center
     margin-bottom: 30px
+    position: relative
+    z-index: 2
+    &::before
+      content: ""
+      display: block
+      width: 92px
+      height: 126px
+      background: url(../img/clients/lines.svg) no-repeat
+      position: absolute
+      top: -10px
+      left: 5px
+      z-index: 1
     &-content
       flex-grow: 1
       padding-left: 20px

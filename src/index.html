@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
   <title>CenterLogistic</title>
 </head>
@@ -31,6 +32,12 @@
   </header>
   <main>
     <section class="intro" id="intro">
+      <div class="intro__slider" id="introSlider">
+          <img class="intro__slider-photo" src="img/intro/intro-bg-1.jpg" alt="">
+          <img class="intro__slider-photo" src="img/intro/intro-bg-2.jpg" alt="">
+          <img class="intro__slider-photo" src="img/intro/intro-bg-3.jpg" alt="">
+          <img class="intro__slider-photo" src="img/intro/intro-bg-4.jpg" alt="">
+      </div>
       <div class="container">
         <div class="intro__inner">
           <div class="request-form request-form_intro">
@@ -53,6 +60,7 @@
               </form>
             </div>
           </div>
+          <!-- /.request-form request-form_intro -->
           <div class="intro__text">
             <div class="intro__countries">USA, Europe, Asia</div>
             <h1 class="intro__title">
@@ -60,7 +68,11 @@
               Trans <br>Logistic
             </h1>
           </div>
-          <!-- /.request-form request-form_intro -->
+          <!-- /.intro__text -->
+          <div class="intro__slider-arrows">
+            <button class="intro__slider-btn intro__slider-btn_prev" type="button" id="introSliderPrev">Prev</button>
+            <button class="intro__slider-btn intro__slider-btn_next" type="button" id="introSliderNext">Next</button>
+          </div>
         </div>
         <!-- /.intro__inner -->
       </div>
@@ -165,7 +177,20 @@
           </div>
           <!-- /.clients__logos -->
           <div class="clients__reviews">
-            <div class="reviews">
+            <div class="reviews" id="reviewsSlider">
+              <div class="reviews__item">
+                <div class="reviews__header">
+                  <img class="reviews__photo" src="https://placehold.it/100" alt="">
+                  <div class="reviews__header-content">
+                    <div class="reviews__name">John Smith</div>
+                    <div class="reviews__company">FOX Hub CEO</div>
+                  </div>
+                </div>
+                <div class="reviews__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga laboriosam et unde totam! Recusandae rem perferendis aliquid consequuntur soluta asperiores quo sunt dolorem. Voluptate optio at sequi saepe sed?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga laboriosam et unde totam! Recusandae rem perferendis aliquid consequuntur soluta asperiores quo sunt dolorem. Voluptate optio at sequi saepe sed?</p>
+                </div>
+              </div>
               <div class="reviews__item">
                 <div class="reviews__header">
                   <img class="reviews__photo" src="https://placehold.it/100" alt="">
@@ -180,6 +205,7 @@
                 </div>
               </div>
             </div>
+            <!-- /.reviews -->
           </div>
           <!-- /.clients__reviews -->
         </div>
@@ -418,6 +444,7 @@
   <!-- /.modal -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

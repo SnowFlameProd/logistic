@@ -300,7 +300,8 @@ ul {
 
 .intro {
   margin-bottom: 30px;
-  background: #000 url(../img/intro/intro-bg.jpg) no-repeat center/cover;
+  position: relative;
+  background-color: #000;
 }
 
 .intro_blog {
@@ -315,6 +316,60 @@ ul {
   background-size: cover;
 }
 
+.intro__slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.intro__slider .slick-list, .intro__slider .slick-track {
+  height: 100%;
+}
+
+.intro__slider-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro__slider-arrows {
+  position: absolute;
+  bottom: 30px;
+  left: 430px;
+}
+
+.intro__slider-btn {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 0;
+  color: transparent;
+  background: none;
+  border-style: solid;
+}
+
+.intro__slider-btn:focus {
+  outline: none;
+}
+
+.intro__slider-btn_prev {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.intro__slider-btn_next {
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
 .intro__inner {
   height: 600px;
   display: -webkit-box;
@@ -326,6 +381,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .intro__text {
@@ -532,16 +589,81 @@ ul {
   position: relative;
 }
 
-.reviews::before {
+.reviews::before, .reviews::after {
   content: "";
   display: block;
-  width: 92px;
-  height: 126px;
-  background: url(../img/clients/lines.svg) no-repeat;
+  width: 8px;
+  height: 100%;
+  background-image: url();
   position: absolute;
-  top: -18px;
+  top: 0;
+  z-index: 3;
+}
+
+.reviews::before {
   left: 0;
-  z-index: 1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+}
+
+.reviews::after {
+  right: 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+}
+
+.reviews .slick-list {
+  padding-top: 10px;
+  z-index: 2;
+}
+
+.reviews .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: 3;
+}
+
+.reviews .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  background: #C4C4C4;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background .2s linear, -webkit-box-shadow .2s linear;
+  transition: background .2s linear, -webkit-box-shadow .2s linear;
+  transition: background .2s linear, box-shadow .2s linear;
+  transition: background .2s linear, box-shadow .2s linear, -webkit-box-shadow .2s linear;
+}
+
+.reviews .slick-dots button:focus {
+  outline: none;
+}
+
+.reviews .slick-dots li {
+  margin: 0 8px;
+}
+
+.reviews .slick-dots .slick-active button {
+  background: #004AF2;
+  -webkit-box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
+          box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
+}
+
+.reviews__item {
+  padding: 0 10px;
 }
 
 .reviews__header {
@@ -552,6 +674,20 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.reviews__header::before {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 126px;
+  background: url(../img/clients/lines.svg) no-repeat;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  z-index: 1;
 }
 
 .reviews__header-content {
