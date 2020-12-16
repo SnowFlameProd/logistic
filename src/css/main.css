@@ -663,6 +663,7 @@ ul {
 }
 
 .reviews__item {
+  display: none;
   padding: 0 10px;
 }
 
@@ -1333,6 +1334,9 @@ ul {
             transform: translate3d(-50%, -50%, 0);
     font-size: 120px;
   }
+  .intro__slider-arrows {
+    display: none;
+  }
   .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1444,6 +1448,7 @@ ul {
   }
   .clients-love {
     margin-top: 15px;
+    margin-left: 30px;
   }
   .mission {
     padding: 30px 20px;
