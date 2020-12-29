@@ -5,7 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <title>CenterLogistic</title>
 </head>
 <body>
@@ -13,13 +23,13 @@
     <div class="container">
       <div class="header__inner">
         <a href="index.html"><img class="img" src="img/logo.svg" alt="Logo"></a>
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <a class="nav__link" href="index.html">Home Page</a>
           <a class="nav__link active" href="blog.html">Blog</a>
           <a class="nav__link" href="privacy.html">Privacy Policy</a>
           <a class="nav__link" href="terms.html">Terma & Conditions</a>
         </nav>
-        <button class="burger" type="button">
+        <button class="burger" type="button" id="navToggle">
           <img class="burger__icon" src="img/icons/burger.svg" alt="">
         </button>
       </div>
@@ -39,7 +49,7 @@
               <div class="articles__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
               </div>
-              <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+              <time class="articles__date" datetime="2019-03-21 19:00">21 March, 2019</time>
             </article>
             <article class="articles__item">
               <h4 class="articles__title">
@@ -48,7 +58,7 @@
               <div class="articles__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
               </div>
-              <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+              <time class="articles__date" datetime="2019-03-21 19:00">21 March, 2019</time>
             </article>
             <article class="articles__item">
               <h4 class="articles__title">
@@ -57,7 +67,7 @@
               <div class="articles__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
               </div>
-              <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+              <time class="articles__date" datetime="2019-03-21 19:00">21 March, 2019</time>
             </article>
             <article class="articles__item">
               <h4 class="articles__title">
@@ -66,7 +76,7 @@
               <div class="articles__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
               </div>
-              <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+              <time class="articles__date" datetime="2019-03-21 19:00">21 March, 2019</time>
             </article>
           </div>
           <a class="btn btn_orange btn_shadow" href="index.html"><span>Back to home</span></a>
@@ -108,14 +118,15 @@
         <p>Call Us: <a href="tel:+9948373123">+9948373123</a> or E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
       </address>
       <nav class="footer__nav">
-        <a href="#">Terms & Contidions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Our blog</a>
+        <a href="terms.html">Terms & Contidions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="blog.html">Our blog</a>
       </nav>
     </div>
   </footer>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
